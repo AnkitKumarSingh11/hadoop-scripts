@@ -30,28 +30,44 @@ This Python script reports the HDFS disk usage of HBase tables based on a given 
         pip install humanize
     ```
 
-Example output:
-
+🚀 Usage
+bash
+```
+python3 script.py <table_prefix1> <table_prefix2> ...
+```
+Example:
+```
+python3 script.py meta person
 ```
 
-=== Tables with mnemonic 'meta' ===
-HBase size without RF    HBase size with RF       Table name
-1.0459 K                 3.1377 K                 /hbase/data/hbase/meta
-0 Bytes                  0 Bytes                  /hbase/data/hbase/meta-2
-0 Bytes                  0 Bytes                  /hbase/data/hbase/meta-info
-0 Bytes                  0 Bytes                  /hbase/data/hbase/meta_another_person
-0 Bytes                  0 Bytes                  /hbase/data/hbase/meta_person
---------------------------------------------------------------------------------
-Total for meta           3.1377 K                 
+📂 Output
+report.txt: Pretty-formatted human-readable report for all table prefixes.
 
+report.csv: CSV file suitable for spreadsheets or further analysis.
 
-=== Tables with mnemonic 'person' ===
-HBase size without RF    HBase size with RF       Table name
-3.0557 K                 9.1670 K                 /hbase/data/hbase/person_record_stream
-4.9058 M                 14.7175 M                /hbase/data/hbase/person_record_stream_0
-1.0560 M                 3.1681 M                 /hbase/data/hbase/person_record_stream_1
---------------------------------------------------------------------------------
-Total for person         17.8946 M                
+Both files include:
 
+Table name
+
+Size without replication
+
+Size with replication
+
+Per-prefix totals
+
+Final total at the bottom
+
+🛠️ Configuration
+You can change the HDFS base directory or replication factor by modifying these lines in the script:
 
 ```
+HDFS_BASE_DIR = "/hbase/data/hbase"
+REPLICATION_FACTOR = 3
+```
+
+📌 Notes
+Tables with 0 bytes (likely empty or non-existent) are still shown in the output for completeness.
+
+Final totals are computed separately for each prefix and also overall at the end.
+
+<center>Built with ❤️ by Ankit </center>
