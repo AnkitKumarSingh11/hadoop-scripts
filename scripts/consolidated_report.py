@@ -35,8 +35,8 @@ def bytes_to_human_readable(b):
     return humanize.naturalsize(b, binary=True, format="%.4f").replace('i', '')
 
 def write_combined_output(all_table_data):
-    txt_filename = "../output/hbase_report.txt"
-    csv_filename = "../output/hbase_report.csv"
+    txt_filename = os.path.join(os.curdir, "output", "consolidated_output.txt")
+    csv_filename = os.path.join(os.curdir, "output", "consolidated_output.csv")
 
     with open(txt_filename, "w") as txt_file, open(csv_filename, "w", newline='') as csv_file:
         csv_writer = csv.writer(csv_file)

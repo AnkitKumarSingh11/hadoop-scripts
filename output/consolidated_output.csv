@@ -1,0 +1,9 @@
+Prefix,Table Name,Size Without RF (Bytes),Size With RF (Bytes)
+meta,/hbase/data/hbase/meta,1071,3213
+meta,/hbase/data/hbase/meta-2,0,0
+meta,/hbase/data/hbase/meta-info,0,0
+meta,/hbase/data/hbase/meta_another_person,0,0
+meta,/hbase/data/hbase/meta_person,0,0
+person,/hbase/data/hbase/person_record_stream,3129,9387
+person,/hbase/data/hbase/person_record_stream_0,5144143,15432429
+person,/hbase/data/hbase/person_record_stream_1,1107347,3322041
