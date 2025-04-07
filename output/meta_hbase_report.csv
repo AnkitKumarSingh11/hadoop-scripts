@@ -1,0 +1,6 @@
+Table Name,Size Without RF (Bytes),Size With RF (Bytes)
+/hbase/data/hbase/meta,1071,3213
+/hbase/data/hbase/meta-2,0,0
+/hbase/data/hbase/meta-info,0,0
+/hbase/data/hbase/meta_another_person,0,0
+/hbase/data/hbase/meta_person,0,0

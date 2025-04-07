@@ -1,0 +1,4 @@
+Table Name,Size Without RF (Bytes),Size With RF (Bytes)
+/hbase/data/hbase/person_record_stream,3129,9387
+/hbase/data/hbase/person_record_stream_0,5144143,15432429
+/hbase/data/hbase/person_record_stream_1,1107347,3322041

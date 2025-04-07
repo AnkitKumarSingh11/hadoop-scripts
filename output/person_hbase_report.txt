@@ -1,0 +1,6 @@
+HBase size without RF    HBase size with RF       Table name
+3.1 K                    9.2 K                    /hbase/data/hbase/person_record_stream
+4.9 M                    14.7 M                   /hbase/data/hbase/person_record_stream_0
+1.1 M                    3.2 M                    /hbase/data/hbase/person_record_stream_1
+--------------------------------------------------------------------------------
+Total                    17.9 M                   

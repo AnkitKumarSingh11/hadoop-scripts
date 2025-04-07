@@ -1,0 +1,8 @@
+HBase size without RF    HBase size with RF       Table name
+1.0 K                    3.1 K                    /hbase/data/hbase/meta
+0 Bytes                  0 Bytes                  /hbase/data/hbase/meta-2
+0 Bytes                  0 Bytes                  /hbase/data/hbase/meta-info
+0 Bytes                  0 Bytes                  /hbase/data/hbase/meta_another_person
+0 Bytes                  0 Bytes                  /hbase/data/hbase/meta_person
+--------------------------------------------------------------------------------
+Total                    3.1 K                    
