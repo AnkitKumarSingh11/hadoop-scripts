@@ -69,5 +69,3 @@ REPLICATION_FACTOR = 3
 Tables with 0 bytes (likely empty or non-existent) are still shown in the output for completeness.
 
 Final totals are computed separately for each prefix and also overall at the end.
-
-<center>Built with ❤️ by Ankit </center>
